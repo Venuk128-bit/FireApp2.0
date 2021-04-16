@@ -69,9 +69,9 @@ def generate_ics():
 sender = MailSender()
 # generate_ics()
 
-sender.email(['vganearachchi@gmail.com'], 'roster', {
-    'startTime': '11:30am 4 Apr 2020',
-    'endTime': '11:30am 4 Apr 2020',
-    'role': 'Driver',
-    'url': "https://test.com"
-})
+# sender.email(['vganearachchi@gmail.com'], 'roster', {
+#     'startTime': '11:30am 4 Apr 2020',
+#     'endTime': '11:30am 4 Apr 2020',
+#     'role': 'Driver',
+#     'url': "https://test.com"
+# })
