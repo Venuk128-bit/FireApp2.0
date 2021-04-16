@@ -3,13 +3,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType, Disposition, ContentId
 from ics import Calendar, Event
 import base64
-import json
 
-from email.utils import formatdate
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.base import MIMEBase
-from email import encoders
 
 from services.secrets import SecretService
 
@@ -75,9 +69,9 @@ def generate_ics():
 sender = MailSender()
 # generate_ics()
 
-# sender.email(['vganearachchi@gmail.com'], 'roster', {
-#     'startTime': '11:30am 4 Apr 2020',
-#     'endTime': '11:30am 4 Apr 2020',
-#     'role': 'Driver',
-#     'url': "https://test.com"
-# })
+sender.email(['vganearachchi@gmail.com'], 'roster', {
+    'startTime': '11:30am 4 Apr 2020',
+    'endTime': '11:30am 4 Apr 2020',
+    'role': 'Driver',
+    'url': "https://test.com"
+})
